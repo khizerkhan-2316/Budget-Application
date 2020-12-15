@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- This is a Budget Application created with HTML5, CSS3 and Vanilla Javascript!-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Budget Application</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+  <body>
+    <heeder>
+      <nav>
+        <section class="box" id="budgetBox">
+          <label for="budget">Budget:</label>
+          <select id="budget" name="budget">
+            <option value=  >USD</option>
+            <option value="EUR" id="EUR" >EUR</option>
+            <option value="mercedes">DKK</option>
+          <input type="number" id="budgetField" placeholder="Enter your budget..." min="0" />
+          <button id="budgetButton">Add Budget</button>
+        </section>
+        <section class="box" id="incomeBox">
+          <label for="income">Ref:</label>
+<input type="text" id="incomeReference">
+          <select id="income" name="income">
+            <option value="volvo">USD</option>
+            <option value="saab">EUR</option>
+            <option value="mercedes">DKK</option>
+          <input type="number" id="incomeField" placeholder="Enter your income..."/>
+          <button id="incomeButton">Income</button>
+        </section>
+        <section class="box" id="exspensesBox">
+          <label for="exspenses">Ref:</label>
+          <input type="text" id="exspensesReference">
+          <select id="exspenses" name="exspenses">
+            <option value="volvo">USD</option>
+            <option value="saab">EUR</option>
+            <option value="mercedes">DKK</option>
+          <input type="number" id="incomeField" placeholder="Enter your expenses..."/>
+          <button id="incomeButton">Expense</button>
+        </section>
+      </nav>
+    </heeder>
+    <main>
+<section class="mainBox" id="mainSectionBudget">
+<h2>Budget</h2>
+</section>
+<section class="mainBox"id="mainSectionIncomes">
+  <h2>Incomes</h2>
+</section>
+<section class="mainBox" id="mainSectionExpenses">
+  <h2>Expenses</h2>
+
+</section>
+<section class="mainBox"id="mainSectionTotal">
+  <h2>Total</h2>
+
+  <section class="totalBox">
+<h2>Balance</h2>
+<img src="images/Wallet_icon.png">
+
+  </section>
+
+  <section class="totalBox">
+    <h2>Total Income </h2>
+<img src="images/Income_icon.png">
+  </section>
+
+  <section class="totalBox">
+    <h2>Total Expenses</h2>
+<img src="images/expenses_icon.png">
+  </section>
+  <button id="reset">Reset</button>
+
+</section>
+
+
+    </main>
+    <footer></footer>
+    <script src="JS/main.js" async defer></script>
+  </body>
+</html>
